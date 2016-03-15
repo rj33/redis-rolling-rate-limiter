@@ -7,9 +7,33 @@ Rolling Rate Limiter is a module for [Node.js](http://nodejs.org) which provides
 - More unit testing
 - Avoid a race condition with ZREM and ZADD
 
-# Requirements
+## Requirements
 
 - NodeJS >= 0.12.x
 - Redis >= 2.6.12
 
-# Examples
+## Examples
+
+```js
+var RateLimit = require("redis-ratelimit");
+var ioredis = require('ioredis'); // or node_redis or any Redis Client
+
+var client = redis.createClient({
+  port: 6379,
+  host: '127.0.0.1'
+});
+
+var limiter = RateLimiter({
+  redis: client, 
+  namespace: "my-limiter", // optional
+  interval: 1000, // in miliseconds (= 1s)
+  maxInInterval: 10, // 10 actions max
+  minDifference: 100 // optional: the minimum time (in miliseconds) between any two actions
+});
+
+client.on('ready', function() {
+  
+});
+
+
+```
