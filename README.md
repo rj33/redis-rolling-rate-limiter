@@ -8,3 +8,10 @@ But several issues has been fixed like :
 - Fixing a bug with interval in microseconds instead of milliseconds
 - More unit testing
 - Avoid a race condition with ZREM and ZADD
+
+# Requirements
+
+- NodeJS >= 0.12.x
+- Redis >= 2.6.12
+
+# Examples
