@@ -20,7 +20,7 @@
     "sliding"
   ],
   "author": "Peter Hayes, Jean-Clément Niguès",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Aurlin/redis-rolling-rate-limiter/issues"
   },
