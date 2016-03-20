@@ -14,8 +14,8 @@ Rolling Rate Limiter is a module for [Node.js](http://nodejs.org) which provides
 ## Examples
 
 ```js
-var RateLimit = require("redis-ratelimit");
-var ioredis = require('ioredis'); // or node_redis or any Redis Client
+var RateLimiter = require("redis-ratelimit");
+var redis = require('ioredis'); // or node_redis or any Redis Client
 
 var client = redis.createClient({
   port: 6379,
