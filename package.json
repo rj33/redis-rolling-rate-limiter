@@ -28,6 +28,7 @@
   "dependencies": {
     "microtime-nodejs": "^1.0.0"
   },
+  "private": true,
   "devDependencies": {
     "fakeredis": "^0.3.4",
     "sinon": "~1.12.2",
